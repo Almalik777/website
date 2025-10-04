@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova | Software House Slayer</title>
+
+    <!-- head di index.html -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.2/tsparticles.bundle.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("PES4oyK_GZNL5Ev5k"); // Public Key EmailJS kamu
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="assets/logo.png" alt="TechNova Logo" />
+          <span>TechNova</span>
+        </div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#galeri">Proyek</a></li>
+          <li><a href="#tim">Tim</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div id="tsparticles"></div>
+      <div class="hero-text">
+        <h1>Masa Depan <span id="typing"></span></h1>
+        <p>
+          Kami menciptakan solusi software modern dengan inspirasi teknologi &
+          kreativitas tinggi.
+        </p>
+        <a href="#layanan" class="btn">Mulai Eksplorasi</a>
+      </div>
+      <div class="hero-img">
+        <img src="assets/kimetsu.png" alt="Anime Hero" />
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>
+        TechNova adalah software house fiktif yang dibentuk oleh kelompok 2.
+        Dengan keahlian dalam web, mobile, game, dan UI/UX, kami berkomitmen
+        menciptakan solusi digital inovatif yang berkualitas tinggi sesuai
+        kebutuhan klien.
+      </p>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan">
+      <h2>Layanan Kami</h2>
+      <div class="cards">
+        <article>
+          <h3>Web Development</h3>
+          <p>Website modern & responsif.</p>
+        </article>
+        <article>
+          <h3>Mobile Apps</h3>
+          <p>Aplikasi Android & iOS.</p>
+        </article>
+        <article>
+          <h3>Game Development</h3>
+          <p>Pengalaman interaktif seru.</p>
+        </article>
+        <article>
+          <h3>UI/UX Design</h3>
+          <p>Desain elegan & intuitif.</p>
+        </article>
+        <article>
+          <h3>AI & Data</h3>
+          <p>Kecerdasan buatan.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="galeri">
+      <h2>Kontribusi Proyek Kami</h2>
+      <div class="grid">
+        <div class="project-card" data-member="mikail">
+          <img src="assets/tanjiro.png" alt="Mikail" />
+          <h3>Desain + Pengembangan</h3>
+        </div>
+        <div class="project-card" data-member="raffa">
+          <img src="assets/zenitsu.png" alt="Raffa" />
+          <h3>Project Manager</h3>
+        </div>
+        <div class="project-card" data-member="chakra">
+          <img src="assets/giyu.png" alt="Chakra" />
+          <h3>Dokumentasi</h3>
+        </div>
+        <div class="project-card" data-member="rizal">
+          <img src="assets/inosuke.png" alt="Rizal" />
+          <h3>Mencari Source IMG</h3>
+        </div>
+        <div class="project-card" data-member="nisa">
+          <img src="assets/nezuko.png" alt="Nisa" />
+          <h3>Coding</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Member" />
+        <h3 id="modal-name"></h3>
+        <p id="modal-role"></p>
+        <div class="social-links">
+          <a id="github-link" href="#" target="_blank">GitHub</a>
+          <a id="ig-link" href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tim -->
+    <section id="tim">
+      <h2>Tim Kami</h2>
+      <div class="cards">
+        <article>
+          <h3>Mikail</h3>
+          <p>Fullstack Developer</p>
+        </article>
+        <article>
+          <h3>Raffa</h3>
+          <p>UI/UX Designer</p>
+        </article>
+        <article>
+          <h3>Chakra</h3>
+          <p>Data Engineer</p>
+        </article>
+        <article>
+          <h3>Rizal</h3>
+          <p>Game Developer</p>
+        </article>
+        <article>
+          <h3>Nisa</h3>
+          <p>Project Manager</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>Hubungi Kami</h2>
+      <form id="contactForm">
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="pesan" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <p id="status"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 TechNova | Dibuat Oleh Kelompok 2 untuk UTS RPL DDRI X</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
